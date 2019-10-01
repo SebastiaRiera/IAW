@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+//a
+
+var nom=prompt("Escriu el nom: ","");
+var nota1=prompt("Escriu la primera nota: ","");
+var nota2=prompt("Escriu la segona nota: ","");
+var nota3=prompt("Escriu la tercera nota: ","");
+var mitja=(parseInt(nota1)+parseInt(nota2)+parseInt(nota3))/3;
+
+if (mitja>=5)
+{
+	document.write("Congratulations! You pass the exam");
+}
+
+//b
+
+var primer=prompt("Escriu un correu: ","");
+var segon=prompt("Escriu un altre correu: ","");
+
+if (primer=segon)
+{
+	document.write("<br>");
+	document.write("Emails are different!");
+}
+
+
+//c
+
+var edad=prompt("Escriu la teva edad: ","");
+
+if (edad>=18 && edad<=65)
+{
+	document.write("<br>");
+	document.write("You are in working age.");
+}
+
+//d
+
+var numero=prompt("Escriu un numero","");
+
+if (numero % 2 ==0)
+{
+	document.write("<br>");
+	document.write("Pair number!")
+}
+
+</script>
+
+</body>
+</html>

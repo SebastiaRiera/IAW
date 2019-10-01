@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IF/ELSE Complex Conditional Structure</title>
+</head>
+<body>
+
+<script type="text/javascript">
+//a
+var num1=prompt("Introdueix el primer numero: ","");
+var num2=prompt("Introdueix el segon numero: ","");
+num1=parseInt(num1);
+num2=parseInt(num2);
+
+if (num1 > num2){
+	var res=num1+num2
+	document.write("El resultat de la suma es: "+res);
+}
+else{
+	var res=num1-num2
+	document.write("El resultat de la resta es: "+res);
+}
+
+//b
+
+var nota1=prompt("Escriu la primera nota: ","");
+var nota2=prompt("Escriu la segona nota: ","");
+var nota3=prompt("Escriu la tercera nota: ","");
+var mitja=(parseInt(nota1)+parseInt(nota2)+parseInt(nota3))/3;
+if (mitja>= 5){
+	document.write("<br>");
+	document.write("Congratulations! You pass the exam");
+}
+else{
+	document.write("<br>");
+	document.write("Nos vemos en septiempre");
+}
+
+//c
+
+var numero=prompt("Escriu un numero: ","");
+if (numero % 2 ==0){
+	document.write("<br>");
+	document.write("Pair number!");
+}
+else {
+	document.write("<br>");
+	document.write("Odd Number");
+}
+
+//d
+
+var edad=prompt("Escriu la teva edad: ","");
+if (edad >= 18 && edad <=65){
+	document.write("<br>");
+	document.write("Working Age");
+}
+else {
+	document.write("<br>");
+	document.write("Not Working Age")
+}
+</script>
+</body>
+</html>
