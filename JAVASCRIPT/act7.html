@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>act 7</title>
+</head>
+<body>
+
+<script type="text/javascript">
+//a
+	var nota1=prompt("Escriu la primera nota: ","");
+	var nota2=prompt("Escriu la segona nota: ","");
+	var nota3=prompt("Escriu la tercera nota: ","");
+	nota1=parseInt(nota1);
+	nota2=parseInt(nota2);
+	nota3=parseInt(nota3);
+	if (nota1>nota2 && nota1>nota3)
+	{
+		document.write(nota1);
+	}
+else
+	if (nota2>nota1 && nota2>nota3)
+	{
+		document.write(nota2);
+	}
+else
+	if (nota3>nota1 && nota3>nota2)
+	{
+		document.write(nota3);
+	}
+
+//b
+	var nota1=prompt("Escriu la primera nota: ","");
+	var nota2=prompt("Escriu la segona nota: ","");
+	var nota3=prompt("Escriu la tercera nota: ","");
+	nota1=parseInt(nota1);
+	nota2=parseInt(nota2);
+	nota3=parseInt(nota3);
+	if (nota1<nota2 && nota1<nota3)
+	{
+		document.write(nota1);
+	}
+else
+	if (nota2<nota1 && nota2<nota3)
+	{
+		document.write(nota2);
+	}
+else
+	if (nota3<nota1 && nota3<nota2)
+	{
+		document.write(nota3);
+	}
+
+//c
+	var num=prompt("Escriu un numero de 0 fins 999: ","");
+	if (num>=0 && num<=999)
+	{
+		document.write("El numero que has introduit te: ");
+		document.write(num.length);
+		document.write(" digits");
+	}
+else
+	{
+		document.write("El numero no esta entre 0 i 999");
+	}
+
+//d
+var enter=prompt("Introdueix un numero enter","");	
+	if (enter>0)
+	{
+		document.write("Numero positiu");
+	} 
+else
+	if (enter<0)
+	{
+		document.write("Numero negatiu");
+	}
+else
+	if (enter=0)
+	{
+		document.write("Cero");
+	}
+</script>
+
+</body>
+</html>

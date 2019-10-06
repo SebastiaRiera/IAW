@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+//a
+	var dia=prompt("Escriu un dia","");
+	var mes=prompt("Escriu el numero de mes","");
+	var any=prompt("Escriu un any","");
+	dia=parseInt(dia);
+	mes=parseInt(mes);
+	any=parseInt(any);
+	if (dia==25 && mes==12 && any==2019)
+	{
+		document.write("Avui es NADAL");
+	}
+	else
+	{
+		document.write("Encara falta per NADAL");
+	}
+
+//b
+	var pimer=prompt("Escriu el primer numero","");
+	var segon=prompt("Escriu el segon numero","");
+	var tercer=prompt("Escriu el tercer numero","");
+	primer=parseInt(primer);
+	segon=parseInt(segon);
+	tercer=parseInt(tercer);
+	if (primer<=10 && segon<=10 && tercer<=10)
+	{
+		document.write("Tots els numeros son inferiors a 10")
+	}
+	else
+	{
+		document.write("No tots els numeros son inferiors a 10")
+	}
+
+//c
+
+var x=prompt("Escriu el valor de X","");
+var y=prompt("Escriu el valor de Y","");
+x=parseInt(x);
+y=parseInt(y);
+if (x>0 && y>0)
+	{
+		document.write("First Quadrant");
+	}
+	else
+if (x<0 && y>0)
+	{
+		document.write("Second Quadrant");
+	}
+	else
+if (x<0 && y<0)
+	{
+		document.write("Third Quadrant");
+	}
+	else
+if (x>0 && y<0)
+	{
+		document.write("Fourth Quadrant");
+	}
+
+//d
+
+var salari=prompt("Escriu el salari","");
+var anys=prompt("Escriu els anys","");
+salari=parseInt(salari);
+anys=parseInt(anys);
+if (salari<500 && anys>=10)
+	{
+		operacio=salari*1.20;
+		document.write("El teu salari per el proxim any es: ");
+		document.write(operacio);
+	}
+	else
+if (salari<500 && anys<10)
+	{
+		operacio=salari*1.05;
+		document.write("El teu salari per el proxim any es: ");
+		document.write(operacio);
+	}
+	else
+if (salari>=500)
+	{
+		document.write("El teu salari per el proxim any es: ");
+		document.write(salari);
+	}
+
+//e
+
+var primer=prompt("Escriu el primer numero","");
+var segon=prompt("Escriu el segon numero","");
+var tercer=prompt("Escriu el tercer numero","");
+primer=parseInt(primer);
+segon=parseInt(segon);
+tercer=parseInt(tercer);
+
+if (primer<10 || segon<10 || tercer<10)
+	{
+		document.write("Alguns numeros son menors que 10");
+	}
+</script>
+</body>
+</html>
