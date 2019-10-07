@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>act 10</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+//a
+
+var x=1;
+while (x<=50) 
+{
+	document.write(x);
+	document.write(" ");
+	x=x+1;
+}
+document.write("<br>");
+var y=50;
+while (y>=1)
+{
+	document.write(y);
+	document.write(" ");
+	y=y-1;
+}
+document.write("<br>");
+var z=-50;
+while (z<=0)
+{
+	document.write(z);
+	document.write(" ");
+	z=z+1;
+}
+	document.write("<br>");
+//b
+
+var b=2;
+while (b<=100)
+	{
+		document.write(b);
+		document.write(" ");
+		b=b+2;
+	}
+document.write("<br>");
+//c
+
+var c=11;
+var c2=1;
+while (c2<=25)
+	{
+		document.write(c);
+		document.write(" ");
+		c=c+11;
+		c2=c2+1;
+	}
+document.write("<br>");
+
+//d
+
+var d=7;
+var d2=1;
+var d3=1;
+while (d2=10)
+	{
+		document.write(d3);
+		document.write(" ");
+		d3=d2*d;
+		d2=d2+1;
+	
+	}
+
+//e
+
+var e=0;
+var susp=0;
+var apro=0;
+var marks=0;
+    while(e<10) {
+        marks=prompt('Introdueix la nota: ',"");
+        if (marks>=5) {
+            apro++;
+        }
+        else {
+            susp++;
+        }
+        e++;
+    }
+    document.write("El numero d'aprovats es "+ apro);
+    document.write('<br>');
+    document.write("El numero de suspesos es "+ susp);
+
+//f
+
+var p=0;
+var alt=0;
+var res=0;
+	while (p<5){
+		alt=parseInt(prompt("Escriu l'altura en cm: ",""));
+		p++;
+		alt=alt+alt;
+	}
+	res=alt/5;
+	document.write("L'altura promitj es de: ");
+	document.write(res);
+	document.write(" cm");
+
+//g
+
+var g=0;
+var sal=0;
+var cinc=0;
+var mil=0;
+var cant=0;
+	while (g<5) {
+		sal=parseInt(prompt("Introdueix el salari: ",""));
+		if (sal>=500 && sal<=999) {
+			cinc++;
+		}
+		else {
+			mil++;
+		}
+		cant=cant+sal;
+		g=g+1;
+	}
+document.write("Cantidad de treballadors amb sou 500-1000: ");
+document.write(cinc);
+document.write("<br>");
+document.write("Cantidad de treballadors amb sou +1000: ");
+document.write(mil);
+document.write("<br>");
+document.write("La suma de tots els salaris es:");
+document.write(cant);
+
+//h
+
+var pr=0;
+var seg=0;
+var llist=0;
+var pr1=0;
+var seg2=0;
+
+	while (llist<1) {
+		while (pr<3) {
+			pr1=parseInt(prompt("1 Introdueix un numero",""));
+			pr1=pr1+pr1;
+			pr++;
+		}
+
+		while (seg<3) {
+			seg2=parseInt(prompt("2 Introdueix un numero",""));
+			seg2=seg2+seg2;
+			seg++;
+		}
+		llist++
+	}
+	if (pr1>seg2) {
+		document.write("La primera llista te la suma mes gran");
+	}
+	else {
+		document.write("La segona llista te la suma mes gran");
+	}
+
+//i
+
+var cont=0;
+var num=0;
+var par=0;
+var imp=0;
+
+while (cont<5) {
+	num=parseInt(prompt("Introdueix un numero",""));
+	if (num%2==0) {
+		par++;
+	}
+	else{
+		imp++;
+	}
+	cont++
+}
+document.write("Numeros pars: ");
+document.write(par);
+document.write("<br>");
+document.write("Numeros impars: ");
+document.write(imp);
+
+</script>
+</body>
+</html>
