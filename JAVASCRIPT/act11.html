@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>act 11</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+//a
+var num=0, suma=0;
+	do {
+		num=prompt("Introdueix un numero, per aturar introudeix el 9999 ");
+		num=parseInt(num);
+		suma=suma+num;
+		}
+	while(num!=9999);
+		suma=suma-9999;
+	if (suma>0) {
+		document.write("El valor de la suma es positiu: "+suma);
+		}
+	else {
+		if (suma<0) {
+		document.write("El valor de suma es negatiu: "+suma);
+		}
+		else {
+		document.write("El valor de la suma es cero: "+suma);
+			}
+		}
+
+//b
+
+var id=0, edad=0, sexe=0, totalp=0, homos=0 , dones=0, treb=0, edad_vella=0, id_vella=0, id_jove=0, edad_jove=0;
+
+do {
+	id=parseInt(prompt("Introdueix el numero d'identificacio",""));
+	edad=parseInt(prompt("Introdueix l'edad",""));
+	sexe=parseInt(prompt("Introdueix el sexe H o D",""));
+	totalp++
+	if (sexe=="H") {
+		homos++;
+		if (edad<edad_jove) {
+			edad_joe=edad;
+			id_jove=id;
+		}
+		if (edad>=18 && edad<=65) {
+			treb++;
+		}
+		else {
+			dones++;
+			if(edad>edad_vella) {
+				edad_vella=edad;
+				id_vella=id;
+			}
+		}
+	}
+while(id!=0);
+document.write("Hi ha "+totalp+" persones");
+document.write("<br>");
+document.write("Hi ha "+homos+" homos");
+document.write("<br>");
+document.write("Hi ha "+dones+" dones");
+document.write("<br>");
+document.write("Hi ha "+treb+" homos entre 18 i 65 anys");
+document.write("<br>");
+document.write("L'id de la dona mes vella es "+id_vella);
+document.write("<br>");
+document.write("L'id de l'home mes jove es "+id_jove;
+}
+
+//c
+var nom=0, cont=0, din=0, total=0, id=0;
+do {
+	id=parseInt(prompt("Introudeix un id 0 per aturar",""));
+	nom=prompt("Introdueix el nom del client","");
+	cont=prompt("Introdueix el numero de conte","");
+	din=parseInt(prompt("Introdueix la cantidad de €",""));
+	total=total+din;
+	document.write("El nom del client: "+nom+" amb numero de conte "+cont+" té "+din+" €");
+	document.write("<br>");
+}
+while(id!=0);
+document.write("La suma total dels diners es: "+total+" €");
+</script>
+</body>
+</html>
