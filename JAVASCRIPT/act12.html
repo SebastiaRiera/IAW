@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>act12</title>
+</head>
+<body>
+<script type="text/javascript">
+
+//a
+var x=0, b=0, a=0, sup=0, res=0;
+for (x=0;x<3;x++) {
+	b=parseInt(prompt("Introdueix la base del triangle",""));
+	a=parseInt(prompt("Introdueix l'altura del triangle",""));
+	res=(b*a)/2;
+	document.write("Area: "+res);
+	document.write("<br>");
+	if (res>12){
+		sup++;
+	}
+}
+document.write("Hi ha "+sup+" triangles amb area major que 12");
+
+//b
+
+var num=0, sum=0, x=0;
+for (x=0;x<10;x++) {
+	num=parseInt(prompt("Introdueix un numero",""));
+	if (x>=5) {
+		sum=sum+num;
+	}
+}
+document.write("La suma dels 5 darrers numeros es: "+sum);
+
+//c
+
+var num=0;
+for (x=1;x<=10;x++){
+	num=x*5;
+	document.write(num);
+	document.write("<br>");
+}
+
+//d
+
+var n=0, m=0;
+n=parseInt(prompt("Introdueix un numero",""));
+for (x=1;x<=10;x++){
+	m=x*n;
+	document.write(m);
+	document.write("<br>");
+}
+
+//e
+
+var L1=0, L2=0, L3=0, equ=0, iso=0, esc=0, ms=0;
+
+for (x=0;x<4;x++) {
+	L1=parseInt(prompt("Introdueix el costat d'un triangle",""));
+	L2=parseInt(prompt("Introdueix el costat d'un triangle",""));
+	L3=parseInt(prompt("Introdueix el costat d'un triangle",""));
+		if (L1==L2 && L2==L3) {
+			equ++;
+			document.write("Es equilater");
+			document.write("<br>");
+		}
+		else if (L1==L2 && L2==L3 && L1==L3) {
+			iso++;
+			document.write("Es isosceles");
+			document.write("<br>");
+		}
+		else {
+			esc++
+			document.write("Es escaleno");
+			document.write("<br>");
+		}
+}
+if (equ>iso && equ>esc){
+	document.write("Hi ha mes equilaters");
+	document.write("<br>");
+}
+else if (iso>equ && iso>esc) {
+	document.write("Hi ha mes isosceles");
+	document.write("<br>");
+}
+else {
+	document.write("Hi ha mes escalenos");
+	document.write("<br>");
+}
+
+//f
+
+var num=0, pos=0, neg=0, imp=0, s_par=0;
+for (x=0;x<10;x++){
+	num=parseInt(prompt("Introdueix un numero",""));
+	if (num>0) {
+		pos++;
+	}
+	else {
+		neg++;
+	}
+	if (num%2==0) {
+		s_par=s_par+num;
+	}
+	else {
+		imp++;
+	}
+}
+document.write("Hi ha "+pos+" numeros positius"+"<br>");
+document.write("Hi ha "+neg+" numeros negatius"+"<br>");
+document.write("Hi ha "+imp+" numeros imparells"+"<br>");
+document.write("La suma dels numeros parells es: "+s_par);
+
+//g
+
+var nota=0, sum_a=0, sum_b=0, sum_c=0, mitj_a=0, mitj_b=0, mitj_c=0;
+sum_a=parseInt(sum_a);
+sum_b=parseInt(sum_b);
+sum_c=parseInt(sum_c);
+for (x=0;x<22;x++) {
+	if (x<5) {
+		nota=parseInt(prompt("Introdueix la nota classe A",""));
+			sum_a=sum_a+nota;
+	}
+	else if (x<11) {
+		nota=parseInt(prompt("Introdueix la nota classe B",""));
+		sum_b=sum_b+nota;
+
+	}
+	else {
+		nota=parseInt(prompt("Introdueix la nota classe C",""));
+		sum_c=sum_c+nota;
+	}
+}
+mitj_a=sum_a/5;
+mitj_b=sum_b/6;
+mitj_c=sum_c/11;
+document.write("La mitja de la classe A es: "+mitj_a+"<br>");
+document.write("La mitja de la classe B es: "+mitj_b+"<br>");
+document.write("La mitja de la classe C es: "+mitj_c+"<br>");
+if (mitj_a>mitj_b && mitj_a>mitj_c) {
+	document.write("La classe A te la millor mitja");
+} 
+else if (mitj_b>mitj_a && mitj_b>mitj_c) {
+	document.write("La classe B te la millor mitja");
+}
+else {
+	document.write("La classe C te la millor mitja");
+}
+</script>
+</body>
+</html>
