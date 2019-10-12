@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+//a
+
+var valor1, valor2, valor3;
+valor1=parseInt(prompt("Introdueix el primer valor",""));
+valor2=parseInt(prompt("Introdueix el segon valor",""));
+valor3=parseInt(prompt("Introdueix el tercer valor",""));
+numero(valor1,valor2,valor3);
+
+function numero(v1,v2,v3){
+	if (v1<v2 && v1<v3) {
+		document.write(v1);
+		}
+	else if (v2<v1 && v2<v3) {
+		document.write(v2);
+		}
+	else {
+		document.write(v3);
+		}
+}
+
+
+
+//b
+var bvalor1, bvalor2, bvalor3;
+bvalor1=parseInt(prompt("Introdueix el primer valor",""));
+bvalor2=parseInt(prompt("Introdueix el segon valor",""));
+bvalor3=parseInt(prompt("Introdueix el tercer valor",""));
+ordre(bvalor1,bvalor2,bvalor3);
+
+function ordre(b1,b2,b3) {
+if (b1<b2 && b1<b3) {
+	impr=b1+' ';
+		if (b2<b3) {
+			impr=impr+b2+' '+b3;
+			}
+		else {
+			impr=impr+b3+' '+b2;
+			}	
+		}
+
+else if (b2<b1 && b2<b3) {
+	impr=b2+' ';
+		if (b1<b3) {
+			impr=impr+b1+' '+b3;
+		}
+		else {
+			impr=impr+b3+' '+b1;
+	}	}
+	
+else {
+	impr=b3+' ';
+		if (b1<b2) {
+			impr=impr+b1+' '+b2;
+		}
+		else {
+			impr=impr+b2+' '+b1;
+				}
+	}
+
+document.write(impr);
+}
+
+
+//c
+var cost;
+cost=parseInt(prompt("Introdueix el costat",""));
+cua(cost);
+
+function cua(c1) {
+var res;
+res=parseInt(res);
+res=c1*4
+document.write(res);
+}
+
+
+//d
+
+var num;
+num=prompt("Introdueix un numero","");
+dig(num);
+
+function dig(d1) {
+document.write(d1.length);
+}
+
+
+//e
+
+var num1, num2, num3;
+num1=parseInt(prompt("Introdueix un numero1",""));
+num2=parseInt(prompt("Introdueix un numero2",""));
+num3=parseInt(prompt("Introdueix un numero3",""));
+nums(num1, num2, num3);
+
+function nums(num1, num2, num3) {
+
+var op;
+op=(num1+num2+num3)/3;
+document.write(op);
+}
+
+
+//f
+
+var fvalor1, fvalor2, fvalor3, fvalor4, fvalor5;
+fvalor1=parseInt(prompt("Introdueix el primer valor",""));
+fvalor2=parseInt(prompt("Introdueix el segon valor",""));
+fvalor3=parseInt(prompt("Introdueix el tercer valor",""));
+fvalor4=parseInt(prompt("Introdueix el quart valor",""));
+fvalor5=parseInt(prompt("Introdueix el quint valor",""));
+ordre(fvalor1,fvalor2,fvalor3,fvalor4,fvalor5);
+
+function ordre(num1, num2, num3, num4, num5) {
+
+var res;
+res=num1+num2+num3+num4+num5;
+document.write(res);
+
+}
+
+</script>
+</body>
+</html>

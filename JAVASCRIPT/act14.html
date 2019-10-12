@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 14</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+//a
+
+	function Addition(value1,value2){
+		this.value1=parseInt(value1);
+		this.value2=parseInt(value2);
+		this.loadValue1=loadValue1;
+		this.loadValue2=loadValue2;
+		this.result=result;
+				}
+				
+	function loadValue1(value) {
+		this.value1=parseInt(value);
+		}
+	function loadValue2(value) {
+		this.value2=parseInt(value);
+		}
+	function result() {
+		return this.value1+this.value2;
+		}
+				
+	z=new Addition(8,15);
+	z.loadValue1(12);
+	z.loadValue2(20);
+	document.write(z.result());
+
+//b
+
+function Person(name,age) {
+	this.name=name;
+	this.age=parseInt(age);
+}
+
+function Company(name,ageworkers) {
+	this.name=name;
+	this.ageworkers=parseInt(ageworkers);
+}
+
+p1=new Person("Toni",34);
+p2=new Person("Pedro",36);
+c1=new Company("ConectaBalear",18);
+
+document.write("En "+p1.name+" que te "+p1.age+" anys pot fer feina a "+c1.name+" ");
+document.write("<br>");
+document.write("En "+p2.name+" que te "+p2.age+" anys pot fer feina a "+c1.name+" ");
+</script>
+
+</body>
+</html>
