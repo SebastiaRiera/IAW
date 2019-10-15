@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 18</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+//a
+
+var contad=0, paraula="";
+while (paraula!="fin") {
+	paraula=prompt("Introdueix una paraula: ");
+	contad++;
+}
+document.write(--contad);
+
+//b
+
+var text=prompt("Introdueix un text");
+var paraula=prompt("Introdueix la paraula que vols cercar");
+var ind=text.indexOf(paraula);
+if (ind!=-1) {
+	document.write("Hi ha aquesta paraula dins el text");
+}
+else {
+	document.write(ind);
+}
+
+//c
+
+
+var paraula=prompt("Introdueix una paraula");
+function Palindromo(paraula) {
+	for (i=0,j=paraula.length-1;i<paraula.length;i++,j--) {
+		if (paraula.charAt(i)!==paraula.charAt(j)) {
+			return false;
+		}
+	}
+	return true;
+}
+	if (Palindromo(paraula)) {
+		document.write("Es un palindromo");
+	}
+	else {
+		document.write("No es un Palindromo");
+	}
+
+//d
+
+var correu=prompt("Introdueix un correu");
+var a=correu.indexOf('@');
+if (a!=-1) {
+	document.write("El correu que has introduit te el caracter @");
+}
+else {
+	document.write("El correu que has introduit no te el caracter @");
+}
+
+//e
+
+var paraula=prompt("Introdueix una paraula");
+document.write("Mitad: "+paraula.substring(0,paraula.length/2)+"<br>");
+document.write("Darrer caracter: "+paraula.charAt(paraula.length-1)+"<br>");
+document.write("Paraula girada: "+paraula.split("").reverse().join("")+"<br>");
+document.write("Paraula separada per espais: "+paraula.split("").join(" ")+"<br>");
+var cont=0;
+for (i=0;i<paraula.length;i++) {
+	var lletra=paraula.charAt(i).toLowerCase();
+	if (lletra=="a" || lletra=="e" || lletra=="i" || lletra=="o" || lletra=="u") {
+		cont++;
+		}
+	}
+	document.write("Te "+cont+" vocals");
+
+//f
+
+var frase=prompt("Introdueix una frase").split(" ");
+for (i=0;i<frase.length;i++) {
+	document.write(frase[i]+"<br>");
+}
+
+
+</script>
+
+</body>
+</html>
