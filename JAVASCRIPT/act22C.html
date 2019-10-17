@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 22C</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+function op() {
+	var p=document.getElementById("cant");
+	var c=document.getElementById("select1");
+	p=parseInt(p.value);
+	c=parseInt(c.options[c.selectedIndex].value);
+	document.getElementById("text2").value=p*c;
+}	
+
+</script>
+
+<form> 
+
+<select id="select1">
+<option value="6">Pepperoni</option>	
+<option value="5">Quatro Formaggi</option>
+<option value="4">Procciuto</option>
+<option value="6">Margarita</option>	
+</select>
+Cantidad: <input type="text" id="cant">
+<br>
+</form>
+Preu: <input id="text2" type="text">
+<input type="button" value="Click" onclick="op()">
+
+
+</body>
+</html>

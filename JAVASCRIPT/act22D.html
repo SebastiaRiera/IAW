@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ACTIVITAT 22D</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function mark () {
+			var total=0;
+			var x=document.getElementById("q1");
+			var y=document.getElementById("q2");
+			var z=document.getElementById("q3");
+			var a=document.getElementById("q4");
+			if (x.options[x.selectedIndex].value == "b") {
+			total++;
+			}
+			if (y.options[y.selectedIndex].value == "a") {
+			total++;
+			}
+			if (z.options[z.selectedIndex].value == "c") {
+			total++;
+			}
+			if (a.options[a.selectedIndex].value == "d") {
+			total++;
+			}
+			return alert(total);
+			}
+				
+</script>
+<form>
+	Pregunta 1 1+1 
+	<select id="q1">
+	<option value="a">1</option>
+	<option value="b">2</option>
+	<option value="c">3</option>
+	<option value="d">4</option>
+	</select>
+	<br>
+	Pregunta 2 2*2
+	<select id="q2">
+	<option value="a">4</option>
+	<option value="b">2</option>
+	<option value="c">6</option>
+	<option value="d">12</option>
+	</select>
+	<br>
+	Pregunta 3 3-1
+	<select id="q3">
+	<option value="a">1</option>
+	<option value="b">3</option>
+	<option value="c">2</option>
+	<option value="d">4</option>
+	</select>
+	<br>
+	Pregunta 4 3*3
+	<select id="q4">
+	<option value="a">2</option>
+	<option value="b">3</option>
+	<option value="c">6</option>
+	<option value="d">9</option>
+	</select>
+	<br>
+	<button type="button" onclick="mark()">Calculate</button>
+</form>
+</body>
+</html>

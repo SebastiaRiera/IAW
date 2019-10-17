@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 22A</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+function canvi() {
+	var sel=document.getElementById('select1');
+	document.getElementById('text2').value=sel.options[sel.selectedIndex].value;
+}
+
+</script>
+
+<form> 
+
+<select id="select1" onchange="canvi()">
+<option value="6€">Pepperoni</option>	
+<option value="5€">Quatro Formaggi</option>
+<option value="4€">Procciuto</option>
+<option value="6€">Margarita</option>	
+</select>
+<br>
+Preu: <input id="text2" type="text">
+</form>
+
+
+</body>
+</html>

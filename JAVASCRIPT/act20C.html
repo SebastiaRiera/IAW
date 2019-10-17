@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 20C</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function con() {
+	var p=document.getElementById("nom").value;
+	var s=document.getElementById("cognom").value;
+	var res=p.concat(" "+s);
+	alert (res);
+}
+
+</script>
+
+<form>
+Introdueix un nom <input type="text" id="nom"><br>
+Introdueix un cognom <input type="text" id="cognom"><br>
+<input type="button" name="boto" value="Click" onclick="con()">
+</form>
+
+</body>
+</html>

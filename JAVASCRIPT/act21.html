@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 21</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+function compr() {
+	var a=document.getElementById("pass1").value;
+	var b=document.getElementById("pass2").value;
+	if (a==b) {
+		alert ("Les contrasenyas coincideixen");
+	}
+	else
+	{
+		alert ("Les contrasenyas no coincideixen");
+	}
+}	
+
+</script>
+
+
+<form>
+Introdueix una contrasenya: <input type="password" id="pass1"><br/>
+Torna a introduir la contrasenya: <input type="password" id="pass2"><br/>
+<input type="button" value="Click" onclick="compr()">
+</form>
+
+</body>
+</html>

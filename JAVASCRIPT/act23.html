@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 23</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+function verificar() {
+	var dep="";
+	if (document.getElementById('checkbox1').checked) {
+		dep=dep+"Football ";
+	}
+
+	if (document.getElementById('checkbox2').checked) {
+		dep=dep+"Tennis ";
+	}
+
+	if (document.getElementById('checkbox3').checked){
+		dep=dep+"Karate ";
+	alert(dep);
+	}
+	
+}
+
+</script>
+
+<form>
+	<input type="checkbox" id="checkbox1">Football
+	<br>
+	<input type="checkbox" id="checkbox2">Tennis
+	<br>
+	<input type="checkbox" id="checkbox3">Karate
+	<br>
+	<input type="button" value="Click" onclick="verificar()">
+</form>
+
+</body>
+</html>

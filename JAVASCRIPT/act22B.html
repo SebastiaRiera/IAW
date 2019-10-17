@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 22B</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function cal() {
+	var pro=document.getElementById("Processador");
+	var mon=document.getElementById("Monitor");
+	var disc=document.getElementById("DiscDur");
+	
+	var prox=parseInt(pro.options[pro.selectedIndex].value);
+	var monx=parseInt(mon.options[mon.selectedIndex].value);
+	var discx=parseInt(disc.options[disc.selectedIndex].value);
+
+	var res=prox+monx+discx;
+	document.getElementById("text2").value=res;
+
+}
+
+</script>
+
+<form> 
+<select id="Processador">
+<option value="200">I3</option>	
+<option value="250">I5</option>
+<option value="310">I7</option>
+<option value="450">I9</option>	
+</select>
+
+<select id="Monitor">
+<option value="100">Samsung 21"</option>
+<option value="250">MSI 24" Curvo</option>
+<option value="300">Samsung 26"</option>
+</select>
+
+<select id="DiscDur">
+<option value="50">1Tb Barracuda</option>
+<option value="100">960 Gb SSD Samsung</option>
+<option value="150">2Tb SSD samsung</option>
+</select>
+<br>
+</form>
+<input type="button" name="boto" value="Click" onclick="cal()">
+Preu: <input id="text2" type="text">
+</body>
+</html>
