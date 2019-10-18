@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 25</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function ret() {
+
+var user=document.getElementById('user').value;
+var correu=document.getElementById('correu').value;
+var comentari=document.getElementById('comentari').value;
+alert(user+"\n"+correu+"\n"+comentari);
+}
+
+</script>
+<form>
+Introdueix un nom d'usuari <input type="text" id="user">
+<br>
+Introdueix un correu <input type="text" id="correu">
+<br>
+Introdueix un comentari 
+<br>
+<textarea id="comentari" rows="5" cols="40"></textarea>
+<br>
+<input type="button" value="Click" onclick="ret()">
+</form>
+</body>
+</html>

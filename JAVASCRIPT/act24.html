@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 24</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+function compr() {
+	if (document.getElementById('menors').checked) {
+		alert("No pots entrar, ets menor d'edad");
+	}
+	if (document.getElementById('majors').checked) {
+		alert("Pots entrar");
+	}
+}	
+
+</script>
+
+
+<input type="radio" id="menors">Menor de 18
+<br>
+<input type="radio" id="majors">Major de 18
+<br>
+<input type="button" value="Click" onclick="compr()">
+
+</body>
+</html>
