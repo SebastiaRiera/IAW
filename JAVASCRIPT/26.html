@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 26</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+function compr() {
+var a=document.getElementById("pass").value;
+var con=/^\w{7,20}$/;
+if (con.test(a)) {
+	alert ("La Contrasenya te entre 7 i 20 caracters");
+}
+else {
+	alert ("La Contrasenya no te entre 7 i 20 caracters");
+}
+}
+
+
+</script>
+<form>
+Usuari:<input type="text" id="user">
+<br>
+Contrasenya:<input type="password" id="pass">
+<br>
+<input type="button" value="Confirm" onclick="compr()">
+</form>
+</body>
+</html>
