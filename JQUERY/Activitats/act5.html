@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 5</title>
+	<script src="../jquery-3.4.1.js"></script>
+</head>
+<body>
+
+	<script>
+		$(document).ready(function() {
+			$("#b1").click(function() {
+				$("p:odd").css("font-size","10px");
+			})
+			$("#b2").click(function() {
+				$("p:odd").css("font-size","15px");
+			})
+			$("#b3").click(function() {
+				$("p:odd").css("font-size","20px");
+			})
+		});
+
+	</script>
+
+
+<h1>Titol noticia</h1>
+<p>Primer paragraf</p>
+<p>Segon paragraf</p>
+<p>Tercer paragraf</p>
+<p>Quart paragraf</p>
+<button id="b1">10px (small)</button>
+<button id="b2">15px (medium)</button>
+<button id="b3">20px (big)</button>
+</body>
+</html>
