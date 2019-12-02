@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 11</title>
+	<script src="../jquery-3.4.1.js"></script>
+	<style type="text/css">
+		table tr td {
+			border: solid 1px; 
+		}
+	</style>
+</head>
+<body>
+
+	<script>
+		$(document).ready(function() {
+			$("td").mouseover(function(){
+    			$(this).css("background-color", "yellow");
+  				});
+  			$("td").mouseout(function(){
+    			$(this).css("background-color", "white");
+  				});
+		});
+
+	</script>
+
+<table>
+	<tr><td>table</td><td>table</td></tr>
+	<tr><td>table</td><td>table</td></tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 16</title>
+	<script src="../jquery-3.4.1.js"></script>
+<style type="text/css">
+	input {
+		color: blue;
+	}
+</style>
+
+</head>
+<body>
+
+	<script>
+		$(document).ready(function() {
+			$("input").focus(function() {
+				$(this).css("color","red");
+			});
+		});
+
+	</script>
+
+<form>
+	<input type="text" id="primer" value="prime">
+	<input type="text" id="segon" value="segon">
+</form>
+
+</body>
+</html>

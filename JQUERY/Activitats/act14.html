@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 14</title>
+	<script src="../jquery-3.4.1.js"></script>
+</head>
+<body>
+
+	<script>
+		$(document).ready(function() {
+			$("button").mousedown(function() {
+				$(this).css("background-color","yellow");
+			});
+			$("button").mouseup(function() {
+				$(this).css("background-color","#fff");
+			});
+		});
+
+	</script>
+
+<button id="primer">primer</button>
+<button id="segon">segon</button>
+</body>
+</html>
