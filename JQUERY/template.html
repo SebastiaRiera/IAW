@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TEMPLATE</title>
-	<script src="../jquery-3.4.1.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#b1").click(function(){
+		var t = $("#article").val();
+		var newLI = $("<li/>",{text:t});
+	  	$("#myList").append(newLI);
+	});
+	$("#b2").click(function(){
+		var t = $("#article").val();
+		var newLI = $("<li/>",{text:t});
+	  	$("#myList").prepend(newLI);
+	});
+  	$("#b3").click(function(){
+  	  $("#myList").empty();
+  	});
+});
+</script>
 </head>
 <body>
-
-	<script>
-		$(document).ready(function() {
-			$
-		});
-
-	</script>
-
+<h2>Shopping List</h2>
+<ol id="myList">
+</ol>
+<hr/>
+ARTICLE: <input type="text" id="article"/> <br/><br/>
+<button id="b1">Append</button>
+<button id="b2">Prepend</button>
+<button id="b3">Empty</button>
 
 </body>
 </html>

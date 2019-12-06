@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activitat 20</title>
+	<script src="..\jquery-3.4.1.js"></script>
+    <style>
+        #div2 {
+            display: none;
+        }
+    </style>
+<script>
+$(document).ready(function(){
+    $("#div1").click(function () {
+      $(this).fadeOut(1000, function() {
+      $("#div2").fadeIn(1000);
+       });
+    });
+});
+</script>
+
+</head>
+<body>
+
+    <div id="div1">
+        <p>Primer paragraf Create a DIV with some paragraphs. When you press on this div, it must be faded out. And when it is completely hidden, another div must be faded in.</p>
+        <p>Segon paragraf Create a DIV with some paragraphs. When you press on this div, it must be faded out. And when it is completely hidden, another div must be faded in.</p>
+       <p>Tercer paragraf Create a DIV with some paragraphs. When you press on this div, it must be faded out. And when it is completely hidden, another div must be faded in.</p>
+    </div>
+    <div id="div2">
+       <p>Primer paragraf Create a DIV with some paragraphs. When you press on this div, it must be faded out. And when it is completely hidden, another div must be faded in.</p>
+        <p>Segon paragraf Create a DIV with some paragraphs. When you press on this div, it must be faded out. And when it is completely hidden, another div must be faded in.</p>
+       <p>Tercer paragraf Create a DIV with some paragraphs. When you press on this div, it must be faded out. And when it is completely hidden, another div must be faded in.</p> 
+   </div>
+</body>
+</html>

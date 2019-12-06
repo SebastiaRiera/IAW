@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activitat 21</title>
+	<script src="..\jquery-3.4.1.js"></script>
+<script>
+$(document).ready(function(){
+    $("#div").click(function () {
+        $(this).fadeTo("slow", 0.2);
+    });
+    $("#div").dblclick(function () {
+        $(this).fadeTo("slow", 1);
+    });
+});
+</script>
+</head>
+<body>
+    <div id="div">
+    <p>Primer paragraf Create a DIV with some paragraphs. When you press on this div, it must be faded out. And when it is completely hidden, another div must be faded in.</p>
+        <p>Segon paragraf Create a DIV with some paragraphs. When you press on this div, it must be faded out. And when it is completely hidden, another div must be faded in.</p>
+       <p>Tercer paragraf Create a DIV with some paragraphs. When you press on this div, it must be faded out. And when it is completely hidden, another div must be faded in.</p>
+    </div>
+</body>
+</html>

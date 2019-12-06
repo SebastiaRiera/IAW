@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activitat 19</title>
+	<script src="..\jquery-3.4.1.js"></script>
+    <style>
+        #text2 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="text1">
+        <p>Primer paragraf div1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, rerum ab. Commodi error vel eaque voluptatum temporibus consequuntur nemo iusto, eius sit incidunt.</p>
+        <p>Segon paragraf div1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, rerum ab. Commodi error vel eaque voluptatum temporibus consequuntur nemo iusto, eius sit incidunt.</p>
+        <p>Tercer paragraf div1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, rerum ab. Commodi error vel eaque voluptatum temporibus consequuntur nemo iusto, eius sit incidunt.</p>
+    </div>
+    <p id="text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, rerum ab. Commodi error vel eaque voluptatum temporibus consequuntur nemo iusto, eius sit incidunt. Mollitia reiciendis impedit dignissimos beatae, fugit magnam, suscipit nemo adipisci itaque dolorum ullam necessitatibus natus? Blanditiis, quaerat reprehenderit? Nam natus sed unde iusto minima nihil autem soluta itaque ratione? Accusamus similique quam animi neque ipsa! Aspernatur esse dolorem quis perspiciatis soluta, laborum impedit voluptatem natus. Maxime laudantium culpa incidunt eligendi tempora vitae quisquam corrupti ducimus beatae, harum dolore vel neque ad quis, officia rerum excepturi molestias? Dignissimos repellat similique error illo sequi dolores odio tenetur accusantium quod maiores molestias, quasi amet eligendi delectus ullam eaque voluptatum. Ab eum rem deleniti blanditiis, voluptas enim, pariatur necessitatibus vero veritatis ex reiciendis ipsum!</p>
+<script>
+    $("#text1").click(function () {
+        $(this).hide(10000, function () {
+            $("#text2").show(10000);
+        });
+    });
+</script>
+</body>
+</html>

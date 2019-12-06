@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Activitat 24</title>
+<script src="../jquery-3.4.1.js"></script>
+<script>
+   $(document).ready(function(){
+      $("#bt1").click(function(){
+       $(this).parent().load("file1.txt");            
+      });         
+      $("#bt2").click(function(){
+       $(this).parent().load("file2.txt");            
+      });    
+   });
+</script>
+</head>
+<body>
+ <div>
+  <div id="primer"><button id="bt1">Load File1</button></div>
+  <div id="segon"><button id="bt2">Load File2</button></div>
+
+</div>
+</body>
+ </html>

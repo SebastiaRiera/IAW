@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activitat 22</title>
+	<script src="..\jquery-3.4.1.js"></script>
+<style>
+   td > * {
+    display: block;
+    }
+</style>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function () {
+     $(this).prev().toggle();
+    });
+});
+</script>
+
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="https://es.freelogodesign.org/Content/img/logo-samples/flooop.png" alt=""><button>Visibilitat</button></td>
+            <td><img src="https://es.freelogodesign.org/Content/img/logo-samples/flooop.png" alt=""><button>Visibilitat</button></td>
+        </tr>
+    </table>
+</body>
+</html>

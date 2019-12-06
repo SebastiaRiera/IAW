@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVITAT 17</title>
+	<script src="../jquery-3.4.1.js"></script>
+</head>
+<body>
+
+<script>
+	$(document).ready(function(){
+		$("input").blur(function(){
+		var a=$(this).val();
+		if (a == "") {
+			alert("Aquest camp no pot estar buit");
+			}
+		});
+	});
+	</script>
+
+<form>
+	<input type="text" id="camp">
+</form>
+
+</body>
+</html>
